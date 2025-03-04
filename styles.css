@@ -1,0 +1,16 @@
+#sky {
+    width: 100vw;
+    height: 100%;
+    background-image: url("images/sky.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    top: 0;
+}
+
+body {
+    height: 50000px;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
