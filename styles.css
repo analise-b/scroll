@@ -20,7 +20,11 @@ html {
 .group1,
 .photos2,
 .group2,
-.photos3 {
+.photos3,
+.group3,
+.message6,
+.message7,
+.delivered2 {
     width: 50%;
     height: 50%;
     background-size: contain;
@@ -34,27 +38,43 @@ html {
     padding-bottom: 0;
 }
 
-.message4 {
+.message4,
+.message6 {
     background-image: url("images/message4.png");
-    width: 25%;
-    height: 25%;
+    width: 30%;
+    height: 30%;
     margin-left: 60%;
+    margin-top: 2%;
 }
 
-.delivered {
+.message6 {
+    background-image: url("images/message6.png");
+}
+
+.delivered,
+.delivered2 {
     background-image: url("images/delivered.png");
     width: 10%;
     height: 10%;
-    margin-left: 72%;
-    margin-top: -12%;
+    margin-left: 78%;
+    margin-top: -7%;
 }
 
-.message5 {
+.message5,
+.message7 {
     background-image: url("images/message5.png");
-    margin-left: 35%;
+    margin-left: 50%;
+    margin-top: -3%;
+    width: 40%;
+    height: 40%;
 }
 
-.typing{
+.message7 {
+    background-image: url("images/message7.png");
+}
+
+.typing,
+.typing2 {
     background-image: url("images/typing.png");
     height: 15%;
     width: 15%;
@@ -225,6 +245,14 @@ html {
     position: absolute;
     left: 50%; /* Start from the middle */
     transform: translate(-50%, 0); /* Center horizontally */
+    transition: opacity 1s ease-in-out;
+}
+
+.group3 {
+    background-image: url("images/group3.png");
+    width: 90%;
+    height: 90%;
+    position: absolute;
     transition: opacity 1s ease-in-out;
 }
 

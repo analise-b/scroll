@@ -100,7 +100,19 @@ window.addEventListener("scroll", () => {
     photos3.style.opacity = scrollPosition >= 30500 ? 1 : 0;
     group3.style.opacity = scrollPosition >= 32000 ? 1 : 0;
     photos3.style.opacity = scrollPosition >= 32000 ? 0 : photos3.style.opacity;
-    group3.style.opacity = scrollPosition >= 33000 ? 0 : group3.style.opacity;
+    group3.style.opacity = scrollPosition >= 34000 ? 0 : group3.style.opacity;
+
+    let message6 = document.querySelector(".message6");
+    let message7 = document.querySelector(".message7");
+    let delivered2 = document.querySelector(".delivered2");
+    let typing2 = document.querySelector(".typing2");
+
+    message6.style.opacity = scrollPosition >= 34000 ? 1 : 0;
+    message7.style.opacity = scrollPosition >= 36000 ? 1 : 0;
+    delivered2.style.opacity = scrollPosition >= 38000 ? 1 : 0;
+    typing2.style.opacity = scrollPosition >= 40000 ? 1 : 0;
+
+
 
 
 });
