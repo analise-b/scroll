@@ -1,16 +1,237 @@
-#sky {
+html {
+    background-color: #2C2C2E;
+}
+
+.intro {
+    position: fixed;
     width: 100vw;
-    height: 100%;
-    background-image: url("images/sky.png");
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.message4,
+.message5,
+.delivered,
+.typing,
+.typing2,
+.photos1,
+.group1,
+.photos2,
+.group2,
+.photos3 {
+    width: 50%;
+    height: 50%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
-    top: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
+.message4 {
+    background-image: url("images/message4.png");
+    width: 25%;
+    height: 25%;
+    margin-left: 60%;
+}
+
+.delivered {
+    background-image: url("images/delivered.png");
+    width: 10%;
+    height: 10%;
+    margin-left: 72%;
+    margin-top: -12%;
+}
+
+.message5 {
+    background-image: url("images/message5.png");
+    margin-left: 35%;
+}
+
+.typing{
+    background-image: url("images/typing.png");
+    height: 15%;
+    width: 15%;
+    margin-left: 20%;
+}
+
+.sky {
+    display: grid;
+    grid-template-areas: "stack";
+    width: 100vw;
+    height: 100%;
+    position: relative;
+}
+
+.sky1,
+.sky2,
+.sky3,
+.sky4,
+.sky5,
+.sky6,
+.sky7,
+.sky8,
+.sky9,
+.sky10 {
+    grid-area: stack;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: 11000px;
+    z-index: -1;
+}
+
+.sky1 {
+    background-image: url("images/sky.png");
+}
+
+.sky2 {
+    background-image: url("images/sky2.png");
+    opacity: 0;
+}
+
+.sky3 {
+    background-image: url("images/sky3.png");
+    opacity: 0;
+}
+
+.sky4 {
+    background-image: url("images/sky4.png");
+    opacity: 0;
+}
+
+.sky5 {
+    background-image: url("images/sky5.png");
+    opacity: 0;
+}
+
+.sky6 {
+    background-image: url("images/sky6.png");
+    opacity: 0;
+}
+
+.sky7 {
+    background-image: url("images/sky7.png");
+    opacity: 0;
+}
+
+.sky8 {
+    background-image: url("images/sky8.png");
+    opacity: 0;
+}
+
+.sky9 {
+    background-image: url("images/sky9.png");
+    opacity: 0;
+}
+
+.sky10 {
+    background-image: url("images/sky10.png");
+    opacity: 0;
+}
+
+.section1 {
+    position: absolute; /* Start as absolute so it doesn’t interfere early */
+    top: 14700px; /* Place it right after the sky */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1; /* Start hidden */
+    overflow: hidden;
+}
+
+.nettleham,
+.stLouis {
+    width: 70%;
+    height: 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("images/nettleham.png");
+    opacity: 0; /* Start hidden */
+    transition: opacity 1s ease-in-out;
+}
+
+.stLouis {
+    background-image: url("images/stLouis.png");
+}
+
+.section2 {
+    position: absolute; /* Start as absolute so it doesn’t interfere early */
+    top: 18200px; /* Place it right after the sky */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1; /* Start hidden */
+    overflow: hidden;
+}
+
+.photos1 {
+    background-image: url("images/photos1.png");
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 1s ease-in-out;
+}
+
+.group1 {
+    background-image: url("images/group1.png");
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 1s ease-in-out;
+}
+
+.photos2 {
+    background-image: url("images/photos2.png");
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: 50%; /* Start from the middle */
+    transform: translate(-50%, 0); /* Center horizontally */
+    transition: opacity 1s ease-in-out;
+}
+
+.group2 {
+    background-image: url("images/group2.png");
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 20%; /* Adjust vertical position */
+    left: 50%; /* Start from the middle */
+    transform: translate(-50%, 0); /* Center horizontally */
+    transition: opacity 1s ease-in-out;
+}
+
+.photos3 {
+    background-image: url("images/photos3.png");
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: 50%; /* Start from the middle */
+    transform: translate(-50%, 0); /* Center horizontally */
+    transition: opacity 1s ease-in-out;
+}
+
+
 body {
-    height: 50000px;
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
+    height: 50000px;
+    overflow-x: hidden;
 }
