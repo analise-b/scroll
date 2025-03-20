@@ -22,9 +22,10 @@ html {
 .group2,
 .photos3,
 .group3,
+.allSky,
 .message6,
 .message7,
-.delivered2 {
+.delivered2{
     width: 50%;
     height: 50%;
     background-size: contain;
@@ -41,14 +42,17 @@ html {
 .message4,
 .message6 {
     background-image: url("images/message4.png");
-    width: 30%;
-    height: 30%;
+    width: 28%;
+    height: 28%;
     margin-left: 60%;
     margin-top: 2%;
 }
 
 .message6 {
     background-image: url("images/message6.png");
+    position: absolute;
+    margin-top: -25%;
+    margin-left: 40%;
 }
 
 .delivered,
@@ -58,6 +62,14 @@ html {
     height: 10%;
     margin-left: 78%;
     margin-top: -7%;
+}
+
+.delivered2 {
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 58%;
+    width: 5%;
+    height: 5%;
 }
 
 .message5,
@@ -71,6 +83,11 @@ html {
 
 .message7 {
     background-image: url("images/message7.png");
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    margin-left: 40%;
+    margin-top: -6%;
 }
 
 .typing,
@@ -81,7 +98,16 @@ html {
     margin-left: 20%;
 }
 
-.sky {
+.typing2 {
+    position: absolute;
+    margin-top: 5%;
+    margin-right: 50%;
+    height: 10%;
+    width: 10%;
+}
+
+.sky,
+.plants {
     display: grid;
     grid-template-areas: "stack";
     width: 100vw;
@@ -98,7 +124,11 @@ html {
 .sky7,
 .sky8,
 .sky9,
-.sky10 {
+.sky10,
+.plants1,
+.plants2,
+.plants3,
+.plants4 {
     grid-area: stack;
     width: 100%;
     background-size: contain;
@@ -106,6 +136,26 @@ html {
     background-position: top center;
     margin-top: 11000px;
     z-index: -1;
+}
+
+.plants1 {
+    background-image: url("images/plants1.png");
+    margin-top: -60%;
+}
+
+.plants2 {
+    background-image: url("images/plants2.png");
+    margin-top: -60%;
+}
+
+.plants3 {
+    background-image: url("images/plants3.png");
+    margin-top: -60%;
+}
+
+.plants4 {
+    background-image: url("images/plants4.png");
+    margin-top: -60%;
 }
 
 .sky1 {
@@ -170,7 +220,8 @@ html {
 }
 
 .nettleham,
-.stLouis {
+.stLouis,
+.nettleham2 {
     width: 70%;
     height: 80%;
     background-size: contain;
@@ -179,6 +230,7 @@ html {
     background-image: url("images/nettleham.png");
     opacity: 0; /* Start hidden */
     transition: opacity 1s ease-in-out;
+    position: absolute;
 }
 
 .stLouis {
@@ -202,8 +254,6 @@ html {
     width: 90%;
     height: 90%;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     transition: opacity 1s ease-in-out;
 }
 
@@ -212,8 +262,6 @@ html {
     width: 70%;
     height: 70%;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     transition: opacity 1s ease-in-out;
 }
 
@@ -222,8 +270,6 @@ html {
     width: 90%;
     height: 90%;
     position: absolute;
-    left: 50%; /* Start from the middle */
-    transform: translate(-50%, 0); /* Center horizontally */
     transition: opacity 1s ease-in-out;
 }
 
@@ -233,8 +279,6 @@ html {
     height: 70%;
     position: absolute;
     top: 20%; /* Adjust vertical position */
-    left: 50%; /* Start from the middle */
-    transform: translate(-50%, 0); /* Center horizontally */
     transition: opacity 1s ease-in-out;
 }
 
@@ -243,13 +287,19 @@ html {
     width: 90%;
     height: 90%;
     position: absolute;
-    left: 50%; /* Start from the middle */
-    transform: translate(-50%, 0); /* Center horizontally */
     transition: opacity 1s ease-in-out;
 }
 
 .group3 {
     background-image: url("images/group3.png");
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+}
+
+.allSky {
+    background-image: url("images/allSky.png");
     width: 90%;
     height: 90%;
     position: absolute;
