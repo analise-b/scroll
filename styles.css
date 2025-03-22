@@ -54,7 +54,7 @@ html {
 
 .message5 {
     background-image: url("images/message5.png");
-    margin-left: 50%;
+    margin-left: 49%;
     margin-top: -3%;
     width: 40%;
     height: 40%;
@@ -341,6 +341,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-    height: 71000px;
+    height: 74000px;
     overflow-x: hidden;
 }

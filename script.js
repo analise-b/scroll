@@ -115,58 +115,59 @@ window.addEventListener("scroll", () => {
 
     let map3 = document.querySelector(".map3");
     let map4 = document.querySelector(".map4");
-    map3.style.opacity = scrollPosition >= 42500 ? 1 : 0;
+    map3.style.opacity = scrollPosition >= 42000 ? 1 : 0;
     map4.style.opacity = scrollPosition >= 44000 ? 1 : 0;
     map3.style.opacity = scrollPosition >= 44000 ? 0 : map3.style.opacity;
     map4.style.opacity = scrollPosition >= 46000 ? 0 : map4.style.opacity;
 
     let map5 = document.querySelector(".map5");
     let map6 = document.querySelector(".map6");
-    map5.style.opacity = scrollPosition >= 46500 ? 1 : 0;
+    map5.style.opacity = scrollPosition >= 46000 ? 1 : 0;
     map6.style.opacity = scrollPosition >= 48000 ? 1 : 0;
     map5.style.opacity = scrollPosition >= 48000 ? 0 : map5.style.opacity;
     map6.style.opacity = scrollPosition >= 50000 ? 0 : map6.style.opacity;
 
     let map7 = document.querySelector(".map7");
     let map8 = document.querySelector(".map8");
-    map7.style.opacity = scrollPosition >= 50500 ? 1 : 0;
+    map7.style.opacity = scrollPosition >= 50000 ? 1 : 0;
     map8.style.opacity = scrollPosition >= 52000 ? 1 : 0;
     map7.style.opacity = scrollPosition >= 52000 ? 0 : map7.style.opacity;
     map8.style.opacity = scrollPosition >= 54000 ? 0 : map8.style.opacity;
 
     let map9 = document.querySelector(".map9");
     let map10 = document.querySelector(".map10");
-    map9.style.opacity = scrollPosition >= 54500 ? 1 : 0;
+    map9.style.opacity = scrollPosition >= 54000 ? 1 : 0;
     map10.style.opacity = scrollPosition >= 56000 ? 1 : 0;
     map9.style.opacity = scrollPosition >= 56000 ? 0 : map9.style.opacity;
     map10.style.opacity = scrollPosition >= 58000 ? 0 : map10.style.opacity;
 
     let map11 = document.querySelector(".map11");
     let map12 = document.querySelector(".map12");
-    map11.style.opacity = scrollPosition >= 58500 ? 1 : 0;
+    map11.style.opacity = scrollPosition >= 58000 ? 1 : 0;
     map12.style.opacity = scrollPosition >= 60000 ? 1 : 0;
     map11.style.opacity = scrollPosition >= 60000 ? 0 : map11.style.opacity;
     map12.style.opacity = scrollPosition >= 62000 ? 0 : map12.style.opacity;
 
     let map13 = document.querySelector(".map13");
     let map14 = document.querySelector(".map14");
-    map13.style.opacity = scrollPosition >= 60500 ? 1 : 0;
-    map14.style.opacity = scrollPosition >= 62000 ? 1 : 0;
-    map13.style.opacity = scrollPosition >= 62000 ? 0 : map13.style.opacity;
-    map14.style.opacity = scrollPosition >= 64000 ? 0 : map14.style.opacity;
+    map13.style.opacity = scrollPosition >= 62000 ? 1 : 0;
+    map14.style.opacity = scrollPosition >= 64000 ? 1 : 0;
+    map13.style.opacity = scrollPosition >= 64000 ? 0 : map13.style.opacity;
+    map14.style.opacity = scrollPosition >= 66000 ? 0 : map14.style.opacity;
 
     let map15 = document.querySelector(".map15");
     let map16 = document.querySelector(".map16");
-    map15.style.opacity = scrollPosition >= 64500 ? 1 : 0;
-    map16.style.opacity = scrollPosition >= 66000 ? 1 : 0;
-    map15.style.opacity = scrollPosition >= 66000 ? 0 : map15.style.opacity;
-    map16.style.opacity = scrollPosition >= 68000 ? 0 : map16.style.opacity;
+    map15.style.opacity = scrollPosition >= 66000 ? 1 : 0;
+    map16.style.opacity = scrollPosition >= 68000 ? 1 : 0;
+    map15.style.opacity = scrollPosition >= 68000 ? 0 : map15.style.opacity;
+    map16.style.opacity = scrollPosition >= 70000 ? 0 : map16.style.opacity;
 
     let map17 = document.querySelector(".map17");
-    map17.style.opacity = scrollPosition >= 68500 ? 1 : 0;
-    map17.style.opacity = scrollPosition >= 70000 ? 0 : map17.style.opacity;
+    map17.style.opacity = scrollPosition >= 70000 ? 1 : 0;
+    map17.style.opacity = scrollPosition >= 72000 ? 0 : map17.style.opacity;
 
     let final = document.querySelector(".final");
-    final.style.opacity = scrollPosition >= 70500 ? 1 : 0;
-    final.style.opacity = scrollPosition >= 72000 ? 0 : final.style.opacity;
+    final.style.opacity = scrollPosition >= 72000 ? 1 : 0;
+    final.style.opacity = scrollPosition >= 74000 ? 0 : final.style.opacity;
+
 });
