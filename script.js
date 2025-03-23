@@ -1,3 +1,5 @@
+let audio = new Audio("wind.mp3");
+window.alert("Unmute the page or click anywhere to hear the sound effects later on!");
 window.addEventListener("scroll", () => {
     let scrollPosition = window.scrollY;
 
@@ -45,6 +47,14 @@ window.addEventListener("scroll", () => {
     sky9.style.opacity = adjustedScroll >= 2000 ? 1 : 0;
     sky10.style.opacity = adjustedScroll >= 2200 ? 1 : 0;
 
+    if (scrollPosition >= 11000 && scrollPosition <= 14700) {
+        audio.play();
+    } else {
+        if (!audio.paused) {
+            audio.pause();
+        }
+    }
+
     let section1 = document.querySelector(".section1");
     let nettleham = document.querySelector(".nettleham");
     let showSection = 14700;
@@ -85,7 +95,7 @@ window.addEventListener("scroll", () => {
     group1.style.opacity = scrollPosition >= 21000 ? 1 : 0;
     photos1.style.opacity = scrollPosition >= 21000 ? 0 : photos1.style.opacity;
     group1.style.opacity = scrollPosition >= 23000 ? 0 : group1.style.opacity;
-    
+
     photos2.style.opacity = scrollPosition >= 24000 ? 1 : 0;
     group2.style.opacity = scrollPosition >= 25000 ? 1 : 0;
     photos2.style.opacity = scrollPosition >= 25000 ? 0 : photos2.style.opacity;
@@ -165,6 +175,14 @@ window.addEventListener("scroll", () => {
     let map17 = document.querySelector(".map17");
     map17.style.opacity = scrollPosition >= 70000 ? 1 : 0;
     map17.style.opacity = scrollPosition >= 72000 ? 0 : map17.style.opacity;
+
+    if (scrollPosition >= 70000 && scrollPosition <= 72000) {
+        audio.play();
+    } else {
+        if (!audio.paused) {
+            audio.pause();
+        }
+    }
 
     let final = document.querySelector(".final");
     final.style.opacity = scrollPosition >= 72000 ? 1 : 0;
